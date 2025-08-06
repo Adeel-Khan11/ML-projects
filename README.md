@@ -1,83 +1,121 @@
-# Math Score Predictor - Deployment Pipeline 
+# Math Score Predictor
 
-`## Project Overview`
+A simple ML project focused on demonstrating **modular architecture**, **CI/CD**, **Docker deployment**, and **cloud-readiness (AWS/Azure)** using a basic math score prediction model.
 
-`This is a simple math score prediction model built with a small dataset (1000 rows, 4-5 columns). While the machine learning model itself is basic, the primary focus of this project is to demonstrate:`
+---
 
-`- Industry-standard project directory structure`
-`- Modular programming practices`
-`- Production-grade deployment pipelines`
-`- Cloud deployment capabilities (Azure, AWS)`
-`- Containerization with Docker`
+## Project Overview
 
-`## Key Features`
+This is a simple math score prediction model built with a small dataset (1000 rows, 4–5 columns). While the machine learning model itself is basic, the primary focus of this project is to demonstrate:
 
-` **Modular Code Architecture**`  
-` **CI/CD Pipeline Implementation**`  
-` **Cloud Deployment Ready**`  
-` **Containerized with Docker**`  
-` **Production-grade Structure**`  
+- Industry-standard project directory structure  
+- Modular programming practices  
+- Production-grade deployment pipelines  
+- Cloud deployment capabilities (Azure, AWS)  
+- Containerization with Docker  
 
-`## Important Note`
+---
 
-```text
+## Key Features
+
+- **Modular Code Architecture**  
+- **CI/CD Pipeline Implementation**  
+- **Cloud Deployment Ready**  
+- **Containerized with Docker**  
+- **Production-grade Structure**
+
+---
+
+## Important Note
+
 While this project uses a simple math score prediction model with a small dataset, its real value lies in demonstrating:
 
-1. Industry-standard practices in project organization
-2. Production-ready deployment pipelines
-3. Modular programming approach
-4. Cloud compatibility with major providers
+1. Industry-standard practices in project organization  
+2. Production-ready deployment pipelines  
+3. Modular programming approach  
+4. Cloud compatibility with major providers  
 
-The model itself was kept intentionally simple to focus on these architectural and deployment considerations.
+---
 
 ## Deployment Highlights
 
 ### Cloud Platforms
-- **Azure** ready deployment configuration
-- **AWS** compatible setup
-- Cloud-optimized directory structure
+- **Azure** -ready deployment configuration  
+- **AWS**-compatible setup  
+- Cloud-optimized directory structure  
 
 ### Containerization
+
+\```Dockerfile
 FROM python:3.11-slim
 WORKDIR /app
 COPY . /app
 RUN apt update -y && apt install -y gcc
 RUN pip install -r requirements.txt
 CMD ["python3", "app.py"]
+\```
+
+---
+
 ## Setup Instructions
-1. Clone the repository:
-git clone <repository-url>
-cd <project-folder>
 
-2. Install dependencies:
-pip install -r requirements.txt
+1. **Clone the repository:**
 
-3. Run the application:
-python app.py
+   \```bash
+   git clone <repository-url>
+   cd <project-folder>
+   \```
 
-4. For Docker deployment:
-docker build -t math-predictor .
-docker run -p 5000:5000 math-predictor
+2. **Install dependencies:**
+
+   \```bash
+   pip install -r requirements.txt
+   \```
+
+3. **Run the application:**
+
+   \```bash
+   python app.py
+   \```
+
+4. **For Docker deployment:**
+
+   \```bash
+   docker build -t math-predictor .
+   docker run -p 5000:5000 math-predictor
+   \```
+
+---
 
 ## Future Enhancements
 
-- Kubernetes orchestration setup
-- Terraform configuration for infrastructure as code
-- Advanced monitoring integration
-- API documentation with Swagger/OpenAPI
+- Kubernetes orchestration setup  
+- Terraform configuration for infrastructure as code  
+- Advanced monitoring integration  
+- API documentation with Swagger/OpenAPI  
+
+---
 
 ## Contribution Guidelines
-1. Fork the repository
-2. Create your feature branch (git checkout -b feature/AmazingFeature)
-3. Commit your changes (git commit -m 'Add some AmazingFeature')
-4. Push to the branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
 
-## License
+1. Fork the repository  
+2. Create your feature branch:  
+   \```bash
+   git checkout -b feature/AmazingFeature
+   \```  
+3. Commit your changes:  
+   \```bash
+   git commit -m 'Add some AmazingFeature'
+   \```  
+4. Push to the branch:  
+   \```bash
+   git push origin feature/AmazingFeature
+   \```  
+5. Open a Pull Request  
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
-##  About Me
+## About Me
 
 **Name:** Adeel Khan  
 **Location:** Pakistan  
@@ -86,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-##  Contact
+## Contact
 
 Feel free to open an issue if you have questions, suggestions, or want to collaborate.
 
